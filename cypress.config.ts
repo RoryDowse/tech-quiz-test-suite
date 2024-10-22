@@ -11,7 +11,7 @@ export default defineConfig({
             viteConfig: customViteConfig, // Pass the custom Vite configuration (from vite.config.ts)
         },
         // Specify the pattern to locate component test files
-        specPattern: "cypress/component/**/*.cy.{js,ts,jsx,tsx}",
+        specPattern: 'cypress/component/**/*.cy.{js,ts,jsx,tsx}',
     },
 
     // Configuration for end-to-end testing
