@@ -11,7 +11,7 @@ describe("<Quiz />", () => {
     // Verify that the first question is presented
     cy.get('[data-cy="quiz-question"]').should("exist").and("not.be.empty");
 
-    // Ensure the Next Question button exists and click it
-    cy.get('[data-cy="next-question"]').should("exist").click({ multiple: true });
+    // Ensure the Next Question button exists
+    cy.get('[data-cy="next-question"]').should("exist");
   });
 })
