@@ -1,4 +1,22 @@
 {
-    "id": "",
-    "question": ""
+    "_id": "60d5f2d8bc2d7e2b1c2b6c5a", 
+    "question": "Test",
+    "answers": [
+        {
+            "text": "Test", 
+            "isCorrect": true
+        },
+        {
+            "text": "Test", 
+            "isCorrect": false
+        },
+        {
+            "text": "Test", 
+            "isCorrect": false
+        },
+        {
+            "text": "Test", 
+            "isCorrect": false
+        }
+    ]
 }
