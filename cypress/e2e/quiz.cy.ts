@@ -1,4 +1,5 @@
-import mockState from '../fixtures/questions.json';
+import { mockState } from '../support/utils/helpers';
+import { Question } from '../support/types';
 
 describe('Tech Quiz Game Cycle', () => {
   context('Game Setup', () => {
@@ -52,13 +53,13 @@ describe('Tech Quiz Game Cycle', () => {
       cy.wait('@getRandomQuestions');
 
       // Verify first question is loaded
-      cy.get('[data-cy="quiz-question"]').should('contain', 'Test');
+      cy.get('[data-cy="quiz-question"]').should('contain', 'Which of the following statements is used to handle exceptions in Python?');
 
       // Answer the question correctly
-      cy.get('[data-cy="next-question"]').eq(0).click(); 
+      cy.get('[data-cy="next-question"]').eq(1).click(); 
 
       // Verify that the next question is displayed
-      cy.get('[data-cy="quiz-question"]').should('contain', 'Test');
+      cy.get('[data-cy="quiz-question"]').should('contain', 'Which of the following statements is used to handle exceptions in Python?');
     });
 
     it('should complete the quiz and show the score', () => {
@@ -67,10 +68,10 @@ describe('Tech Quiz Game Cycle', () => {
       cy.wait('@getRandomQuestions');
 
       // Answer the first question (correct)
-      cy.get('[data-cy="next-question"]').eq(0).click();
+      cy.get('[data-cy="next-question"]').eq(1).click();
 
       // Answer the second question (correct)
-      cy.get('[data-cy="next-question"]').eq(0).click();
+      cy.get('[data-cy="next-question"]').eq(1).click();
 
       // Check that the quiz is completed
       cy.get('[data-cy="quiz-completed"]').should('exist');
@@ -85,10 +86,10 @@ describe('Tech Quiz Game Cycle', () => {
       cy.wait('@getRandomQuestions');
 
       // Answer the questions
-      cy.get('[data-cy="next-question"]').eq(0).click();
+      cy.get('[data-cy="next-question"]').eq(1).click();
 
       // Answer the second question (correct)
-      cy.get('[data-cy="next-question"]').eq(0).click();
+      cy.get('[data-cy="next-question"]').eq(1).click();
 
       // Verify the quiz is completed
       cy.get('[data-cy="quiz-completed"]').should('exist');
