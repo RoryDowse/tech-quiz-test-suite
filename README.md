@@ -6,7 +6,7 @@
 
 The Tech Quiz Test Suite enhances a MERN stack quiz application by integrating Cypress for comprehensive testing. The app allows users to take a random tech quiz and view their score upon completion. This project focuses on automating component and end-to-end tests, ensuring the quiz functions correctly, from starting the quiz to viewing the final score. By building this project, I aimed to gain experience in using Cypress to improve the reliability of web applications, highlighting the importance of automated testing in maintaining robust, user-friendly software.
 
-Walkthrough Video: https://drive.google.com/file/d/1EO5BrUkWrnKzlvqAUuaMKA9pYjCNC6QM/view
+Walkthrough Video: https://drive.google.com/file/d/1lvXzE2VE-07dzMOGqFrsXzVidU2-gZkx/view?usp=sharing
 
 ## Table of Contents
 
