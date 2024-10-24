@@ -8,27 +8,6 @@ describe('Tech Quiz Game Cycle', () => {
       cy.intercept('GET', '/api/questions/random', {
         statusCode: 200,
         body: [mockState, mockState],
-        // [
-        //   // Mock questions as per your API response structure
-        //   {
-        //     question: 'What is the capital of France?',
-        //     answers: [
-        //       { text: 'Paris', isCorrect: true },
-        //       { text: 'London', isCorrect: false },
-        //       { text: 'Berlin', isCorrect: false },
-        //       { text: 'Rome', isCorrect: false },
-        //     ],
-        //   },
-        //   {
-        //     question: 'What is 2 + 2?',
-        //     answers: [
-        //       { text: '3', isCorrect: false },
-        //       { text: '4', isCorrect: true },
-        //       { text: '5', isCorrect: false },
-        //       { text: '6', isCorrect: false },
-        //     ],
-        //   },
-        // ], // Replace with mock questions as needed
       }).as('getRandomQuestions');
         
         cy.visit('/');
